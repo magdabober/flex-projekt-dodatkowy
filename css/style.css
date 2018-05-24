@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*nawigacja*/
+
+#main-nav {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+#main-nav.scrolled {
+    background-color: rgba(232, 119, 12, 0.6);
+}
+
+#main-nav .nav-list {
+    list-style: none;
+    padding: 30px 20px;
+    text-align: right;
+    margin: 0;
+}
+
+#main-nav .nav-list .nav-list-item,
+footer ul.footer-list .footer-list-item {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+#main-nav .nav-list .nav-list-item:hover {
+    background-color: #560785;
+}
+
+#main-nav .nav-list .nav-list-item a,
+footer ul.footer-list .footer-list-item a{
+    color: white;
+    text-decoration: none;
+}
+
+/*header*/
+
+#main-header {
+    height: 100vh;
+    background-color: #970CE8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-header .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-header .header-text h1 {
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    background-color: #E8770C;
+    color: white;
+    text-transform: uppercase;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #E8770C;
+}
+
+/*sekcje-ogolne*/
+
+section {
+    padding: 60px 100px;
+}
+
+section .section-text {
+    text-align: center;
+}
+
+section .section-text h2 {
+    text-transform: uppercase;
+}
+
+section .section-text p {
+    margin-bottom: 50px;
+}
+
+section .section-pictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*team*/
+
+#team {
+    background-color: #DEF3FF;
+    color: #43494C;
+}
+
+#team .section-pictures .picture {
+    width: 20%;
+    text-align: center;
+}
+
+
+#team .section-pictures .picture img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#team .section-pictures .picture h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#team .section-pictures .picture p.job-title {
+    color: #92B1BF;
+    margin: 0;
+}
+
+#team .section-pictures .picture .social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#team .section-pictures .picture .social-media a.media-links {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: white;
+    background-color: #92B1BF;
+    box-sizing: border-box;
+    transition: all 0.4s;
+}
+
+#team .section-pictures .picture .social-media a.media-links:hover {
+    color: #92B1BF;
+    background: white;
+    border: 1px solid #92B1BF;
+}
+
+/*skills*/
+
+#skills {
+    color: #43494C;
+}
+
+/*reviews*/
+
+#reviews {
+    color: white;
+    background-color: #D13E8C;
+}
+
+#reviews .section-pictures .client-review {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+#reviews .section-pictures .client-review img {
+    width: 20%;
+    border-radius: 50%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+#reviews .section-pictures .client-review .review-text {
+    margin-left: 30%;
+}
+
+#reviews .section-pictures .client-review .review-text p {
+    font-style: italic;
+}
+
+#reviews .section-pictures .client-review .review-text h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#reviews .section-pictures .client-review .review-text p.title {
+    color: #FFC20D;
+    font-style: normal;
+    margin: 0;
+}
+
+/*contact*/
+
+#contact {
+    color: white;
+    background-color: #3E51B0;
+}
+
+#contact .section-pictures form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contact .section-pictures form input,
+#contact .section-pictures form textarea {
+    background-color: #2A3778;
+    width: 48%;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+}
+
+#contact .section-pictures form textarea {
+    width: 100%;
+    height: 200px;
+}
+
+#contact .section-pictures form input::placeholder,
+#contact .section-pictures form textarea::placeholder {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact .section-pictures #btn-contact {
+    background-color: #29B8B8;
+    margin: 0 auto;
+}
+
+#contact .section-pictures #btn-contact:hover {
+    color: #29B8B8;
+    background-color: white;
+}
+
+/*footer*/
+
+footer {
+    background-color: #303E87;
+    padding: 20px 100px;
+}
+
+footer ul.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer ul.footer-list .footer-list-item a:hover {
+    color: #29B8B8;
+}
+

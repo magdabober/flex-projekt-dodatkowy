@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>FLex projekt dodatkowy</title>
     <link rel="stylesheet" href="css/style.css">
+    <!--    <link rel="stylesheet" href="css/circle.css">-->
+<!--    <link rel="stylesheet" href="css/my-circle.css">-->
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
@@ -15,12 +18,14 @@
     <!--   nawigacja-->
 
     <nav id="main-nav">
+        <label for="burger-checkbox" class="mobile-nav"><i class="fa fa-bars fa-2x hamburger-icon" aria-hidden="true"></i></label>
+        <input type="checkbox" id="burger-checkbox">
         <ul class="nav-list">
-            <li class="nav-list-item"><a href="">home</a></li>
-            <li class="nav-list-item"><a href="">about</a></li>
-            <li class="nav-list-item"><a href="">work</a></li>
-            <li class="nav-list-item"><a href="">blog</a></li>
-            <li class="nav-list-item"><a href="">contact</a></li>
+            <li class="nav-list-item"><a href="#main-header">home</a></li>
+            <li class="nav-list-item"><a href="#team">about</a></li>
+            <li class="nav-list-item"><a href="#skills">work</a></li>
+            <li class="nav-list-item"><a href="#reviews">blog</a></li>
+            <li class="nav-list-item"><a href="#contact">contact</a></li>
         </ul>
     </nav>
 
@@ -45,7 +50,7 @@
             <div class="section-pictures">
                 <div class="picture">
                     <img src="img/anne-hathaway.jpg" alt="">
-                    <h3>Anne hathaway</h3>
+                    <h3 class="person-name">Anne hathaway</h3>
                     <p class="job-title">CEO/Marketing Guru</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cum, optio temporibus natus esse voluptate necessitatibus quaerat dolores in similique.</p>
                     <div class="social-media">
@@ -57,7 +62,7 @@
                 </div>
                 <div class="picture">
                     <img src="img/kate-upton.jpg" alt="">
-                    <h3>Kate Upton</h3>
+                    <h3 class="person-name">Kate Upton</h3>
                     <p class="job-title">Creative Director</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cum, optio temporibus natus esse voluptate necessitatibus quaerat dolores in similique.</p>
                     <div class="social-media">
@@ -69,7 +74,7 @@
                 </div>
                 <div class="picture">
                     <img src="img/olivia-wilde.jpg" alt="">
-                    <h3>Olivia Wilde</h3>
+                    <h3 class="person-name">Olivia Wilde</h3>
                     <p class="job-title">Lead Designer</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cum, optio temporibus natus esse voluptate necessitatibus quaerat dolores in similique.</p>
                     <div class="social-media">
@@ -81,7 +86,7 @@
                 </div>
                 <div class="picture">
                     <img src="img/ashley-greene.jpg" alt="">
-                    <h3>Ashley Greene</h3>
+                    <h3 class="person-name">Ashley Greene</h3>
                     <p class="job-title">SEO/Developer</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cum, optio temporibus natus esse voluptate necessitatibus quaerat dolores in similique.</p>
                     <div class="social-media">
@@ -104,12 +109,128 @@
                 <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolores dolore vitae maiores facilis eligendi!</p>
             </div>
             <div class="section-pictures">
+                <!--
                 <div class="picture">
-
-                    <!--                skills wheels!!-->
-
-
+                    <div class="circle c100 p90 royalblue">
+                        <span>90%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h3 class="person-name">Web design</h3>
                 </div>
+
+                <div class="picture">
+                    <div class="circle c100 p75 pink">
+                        <span>75%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h3 class="person-name">HTML/CSS</h3>
+                </div>
+
+                <div class="picture">
+                    <div class="circle c100 p70 aqua">
+                        <span>70%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h3 class="person-name">Graphic design</h3>
+                </div>
+
+                <div class="picture">
+                    <div class="circle c100 p85 orange">
+                        <span>85%</span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                    <h3 class="person-name">UI/UX</h3>
+                </div>
+-->
+                <div class="picture">
+                    <div class="radial-progress">
+                        <div class="circle" id="web-design">
+                            <div class="mask full">
+                                <div class="fill blue"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill blue"></div>
+                                <div class="fill blue fix"></div>
+                            </div>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="inset">
+                            <div class="percentage">90%</div>
+                        </div>
+                    </div>
+                    <h3 class="person-name">Web design</h3>
+                </div>
+
+                <div class="picture">
+                    <div class="radial-progress">
+                        <div class="circle" id="html">
+                            <div class="mask full">
+                                <div class="fill pink"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill pink"></div>
+                                <div class="fill pink fix"></div>
+                            </div>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="inset">
+                            <div class="percentage">75%</div>
+                        </div>
+                    </div>
+                    <h3 class="person-name">HTML/CSS</h3>
+                </div>
+
+                <div class="picture">
+                    <div class="radial-progress">
+                        <div class="circle" id="graphic-design">
+                            <div class="mask full">
+                                <div class="fill green"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill green"></div>
+                                <div class="fill green fix"></div>
+                            </div>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="inset">
+                            <div class="percentage">70%</div>
+                        </div>
+                    </div>
+                    <h3 class="person-name">Graphic design</h3>
+                </div>
+
+                <div class="picture">
+                    <div class="radial-progress">
+                        <div class="circle" id="ui">
+                            <div class="mask full">
+                                <div class="fill orange"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill orange"></div>
+                                <div class="fill orange fix"></div>
+                            </div>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="inset">
+                            <div class="percentage">85%</div>
+                        </div>
+                    </div>
+                    <h3 class="person-name">UI/UX</h3>
+                </div>
+
+
             </div>
         </div>
 
@@ -147,7 +268,7 @@
                     <img src="img/kate-upton.jpg" alt="">
                     <div class="review-text">
                         <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora laborum officiis ex vitae ad fugiat enim perferendis doloribus possimus dolorum!"</p>
-                        <h3>Bruno Mars</h3>
+                        <h3>Jessica Alba</h3>
                         <p class="title">Lead Designer at Behance</p>
                     </div>
                     <div class="clear"></div>
@@ -173,7 +294,7 @@
                 <h2 class="section-header">Get in touch</h2>
                 <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-            
+
             <div class="section-pictures">
                 <form action="">
                     <input type="text" placeholder="Your Name">
@@ -181,23 +302,23 @@
                     <textarea placeholder="Your Message"></textarea>
                 </form>
                 <button type="submit" class="btn" id="btn-contact">Send message</button>
-            </div>  
+            </div>
         </div>
     </section>
-    
-<!--    footer-->
 
-<footer>
-    <ul class="footer-list">
-        <li class="footer-list-item"><a href="">Facebook</a></li>
-        <li class="footer-list-item"><a href="">Twitter</a></li>
-        <li class="footer-list-item"><a href="">Google+</a></li>
-        <li class="footer-list-item"><a href="">LinkedIn</a></li>
-        <li class="footer-list-item"><a href="">Behance</a></li>
-        <li class="footer-list-item"><a href="">Dribbble</a></li>
-        <li class="footer-list-item"><a href="">GitHub</a></li>
-    </ul>
-</footer>
+    <!--    footer-->
+
+    <footer>
+        <ul class="footer-list">
+            <li class="footer-list-item"><a href="">Facebook</a></li>
+            <li class="footer-list-item"><a href="">Twitter</a></li>
+            <li class="footer-list-item"><a href="">Google+</a></li>
+            <li class="footer-list-item"><a href="">LinkedIn</a></li>
+            <li class="footer-list-item"><a href="">Behance</a></li>
+            <li class="footer-list-item"><a href="">Dribbble</a></li>
+            <li class="footer-list-item"><a href="">GitHub</a></li>
+        </ul>
+    </footer>
 
 
     <script src="js/jquery-3.3.1.min.js"></script>

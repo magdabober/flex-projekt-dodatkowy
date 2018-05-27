@@ -1,0 +1,58 @@
+@media all and (max-width: 992px) {
+    #team .section-pictures .picture {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #main-nav {
+        background-color: rgba(232, 119, 12, 0.6);
+    }
+
+    #main-nav .nav-list {
+        display: none;
+        padding: 0px 20px 10px 20px;
+    }
+
+    #main-nav .mobile-nav,
+    #main-nav #burger-checkbox:checked + ul.nav-list {
+        display: block;
+    }
+
+    #main-nav .nav-list .nav-list-item {
+        display: inline-block;
+        width: 20%;
+        margin-left: 50%;
+    }
+
+    #main-header .header-text {
+        padding: 0 10px;
+    }
+
+    section,
+    footer {
+        padding: 30px 40px;
+    }
+
+    #skills .section-pictures .picture {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    #reviews .section-pictures .client-review {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    #team .section-pictures .picture,
+    #skills .section-pictures .picture {
+        width: 100%;
+    }
+
+    #team .section-pictures .picture img {
+        width: 60%;
+    }
+}
